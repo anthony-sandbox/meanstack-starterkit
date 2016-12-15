@@ -40,3 +40,12 @@ This is a MEAN Stack starter kit for use with projects that will utilize MongoDB
         - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
         - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
         - [eslint-watch](https://www.npmjs.com/package/eslint-watch)
+
+### JavaScript Compiler
+- **Babel**
+    - Homepage: https://babeljs.io/
+    - Package: https://www.npmjs.com/package/babel-core
+    - Dependencies:
+        - [babel-cli](https://www.npmjs.com/package/babel-cli)
+        - [babel-preset-latest](https://www.npmjs.com/package/babel-latest)
+        - [babel-watch](https://www.npmjs.com/package/babel-watch)
