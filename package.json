@@ -3,14 +3,24 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "prestart": "npm-run-all --parallel nsp snyk",
+    "start": "npm-run-all --parallel lint:watch",
+    "lint": "node_modules/.bin/esw ./ --color --fix",
+    "lint:watch": "npm run lint -- --watch",
+    "nsp": "node_modules/.bin/nsp check",
+    "snyk": "node_modules/.bin/snyk test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^3.12.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-watch": "^2.1.14",
     "npm-run-all": "^3.1.2",
     "nsp": "^2.6.2",
     "snyk": "^1.21.2"
